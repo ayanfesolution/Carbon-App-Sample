@@ -17,8 +17,8 @@
 		04312CD128072817009B39E8 /* onlinepayment.json in Resources */ = {isa = PBXBuildFile; fileRef = 04312CCE28072816009B39E8 /* onlinepayment.json */; };
 		04312CD228072817009B39E8 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = 04312CCF28072817009B39E8 /* people.json */; };
 		04312CD328072817009B39E8 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = 04312CCF28072817009B39E8 /* people.json */; };
-		04312CD52807AD9B009B39E8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04312CD42807AD9B009B39E8 /* Model.swift */; };
-		04312CD62807AD9B009B39E8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04312CD42807AD9B009B39E8 /* Model.swift */; };
+		04312CD52807AD9B009B39E8 /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04312CD42807AD9B009B39E8 /* NetworkCall.swift */; };
+		04312CD62807AD9B009B39E8 /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04312CD42807AD9B009B39E8 /* NetworkCall.swift */; };
 		04EC1DA52801869F00F56B12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC1DA42801869F00F56B12 /* AppDelegate.swift */; };
 		04EC1DA72801869F00F56B12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC1DA62801869F00F56B12 /* SceneDelegate.swift */; };
 		04EC1DAE280186A100F56B12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EC1DAD280186A100F56B12 /* Assets.xcassets */; };
@@ -34,6 +34,12 @@
 		04EC1DE028038A1C00F56B12 /* OnboardingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC1DDE28038A1C00F56B12 /* OnboardingScreenViewController.swift */; };
 		04EC1DE2280498E200F56B12 /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC1DE1280498E200F56B12 /* ProfilePageViewController.swift */; };
 		04EC1DE3280498E200F56B12 /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC1DE1280498E200F56B12 /* ProfilePageViewController.swift */; };
+		04EF46482807BBA00045CF9B /* ProfileModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF46472807BBA00045CF9B /* ProfileModal.swift */; };
+		04EF46492807BBA00045CF9B /* ProfileModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF46472807BBA00045CF9B /* ProfileModal.swift */; };
+		04EF464B2807C17C0045CF9B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF464A2807C17C0045CF9B /* ViewModel.swift */; };
+		04EF464C2807C17C0045CF9B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF464A2807C17C0045CF9B /* ViewModel.swift */; };
+		04EF465128081B5D0045CF9B /* AccountCreation+ Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF465028081B5D0045CF9B /* AccountCreation+ Extention.swift */; };
+		04EF465228081B5D0045CF9B /* AccountCreation+ Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF465028081B5D0045CF9B /* AccountCreation+ Extention.swift */; };
 		2421EEE070286B3D7EDE6D4E /* Pods_CarbonAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CC0A3D113CD461D7D38EB1 /* Pods_CarbonAppTests.framework */; };
 		4CDA37903F6685FDFEFD5C39 /* Pods_CarbonApp_CarbonAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82290B2192830CD3E5A5A742 /* Pods_CarbonApp_CarbonAppUITests.framework */; };
 		651E9101A13D17D7D68F864A /* Pods_CarbonApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB824729EDB47887D3ED141B /* Pods_CarbonApp.framework */; };
@@ -62,7 +68,7 @@
 		04312CCB280711EB009B39E8 /* mobilebanking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mobilebanking.json; sourceTree = "<group>"; };
 		04312CCE28072816009B39E8 /* onlinepayment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onlinepayment.json; sourceTree = "<group>"; };
 		04312CCF28072817009B39E8 /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
-		04312CD42807AD9B009B39E8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		04312CD42807AD9B009B39E8 /* NetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCall.swift; sourceTree = "<group>"; };
 		04EC1DA12801869F00F56B12 /* CarbonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarbonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EC1DA42801869F00F56B12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04EC1DA62801869F00F56B12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +85,9 @@
 		04EC1DDB2803331400F56B12 /* SignInPageViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInPageViewController + Extension.swift"; sourceTree = "<group>"; };
 		04EC1DDE28038A1C00F56B12 /* OnboardingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenViewController.swift; sourceTree = "<group>"; };
 		04EC1DE1280498E200F56B12 /* ProfilePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
+		04EF46472807BBA00045CF9B /* ProfileModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModal.swift; sourceTree = "<group>"; };
+		04EF464A2807C17C0045CF9B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		04EF465028081B5D0045CF9B /* AccountCreation+ Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountCreation+ Extention.swift"; sourceTree = "<group>"; };
 		0B7EAFAAD5AA2B6E884086A3 /* Pods-CarbonAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarbonAppTests.release.xcconfig"; path = "Target Support Files/Pods-CarbonAppTests/Pods-CarbonAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		24DE82B489CAAAEB893E7B50 /* Pods-CarbonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarbonApp.release.xcconfig"; path = "Target Support Files/Pods-CarbonApp/Pods-CarbonApp.release.xcconfig"; sourceTree = "<group>"; };
 		61FB9B68ACB2F4D184ABFFE7 /* Pods-CarbonApp-CarbonAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarbonApp-CarbonAppUITests.release.xcconfig"; path = "Target Support Files/Pods-CarbonApp-CarbonAppUITests/Pods-CarbonApp-CarbonAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				04312CC32805DFD6009B39E8 /* OnboardingViewController */,
+				04EF465328081C010045CF9B /* AccountCreation ViewConroller */,
 				04312CC42805E011009B39E8 /* SignInPageView-Controllers */,
 			);
 			path = ViewContollers;
@@ -196,9 +206,10 @@
 				04312CCA28070973009B39E8 /* Asset */,
 				04EC1DAF280186A100F56B12 /* LaunchScreen.storyboard */,
 				04EC1DB2280186A100F56B12 /* Info.plist */,
-				04EC1DD6280232FD00F56B12 /* AccountCreationPageViewController.swift */,
 				04EC1DE1280498E200F56B12 /* ProfilePageViewController.swift */,
-				04312CD42807AD9B009B39E8 /* Model.swift */,
+				04312CD42807AD9B009B39E8 /* NetworkCall.swift */,
+				04EF46472807BBA00045CF9B /* ProfileModal.swift */,
+				04EF464A2807C17C0045CF9B /* ViewModel.swift */,
 			);
 			path = CarbonApp;
 			sourceTree = "<group>";
@@ -218,6 +229,15 @@
 				04EC1DC7280186A100F56B12 /* CarbonAppUITestsLaunchTests.swift */,
 			);
 			path = CarbonAppUITests;
+			sourceTree = "<group>";
+		};
+		04EF465328081C010045CF9B /* AccountCreation ViewConroller */ = {
+			isa = PBXGroup;
+			children = (
+				04EC1DD6280232FD00F56B12 /* AccountCreationPageViewController.swift */,
+				04EF465028081B5D0045CF9B /* AccountCreation+ Extention.swift */,
+			);
+			path = "AccountCreation ViewConroller";
 			sourceTree = "<group>";
 		};
 		4B7C1FDF455DE10AE0B9515B /* Frameworks */ = {
@@ -494,9 +514,12 @@
 				04EC1DA52801869F00F56B12 /* AppDelegate.swift in Sources */,
 				04EC1DA72801869F00F56B12 /* SceneDelegate.swift in Sources */,
 				04EC1DD7280232FD00F56B12 /* AccountCreationPageViewController.swift in Sources */,
-				04312CD52807AD9B009B39E8 /* Model.swift in Sources */,
+				04312CD52807AD9B009B39E8 /* NetworkCall.swift in Sources */,
+				04EF465128081B5D0045CF9B /* AccountCreation+ Extention.swift in Sources */,
 				04EC1DE2280498E200F56B12 /* ProfilePageViewController.swift in Sources */,
 				04312CC12805DFBC009B39E8 /* OnboardingViewController + Extention.swift in Sources */,
+				04EF464B2807C17C0045CF9B /* ViewModel.swift in Sources */,
+				04EF46482807BBA00045CF9B /* ProfileModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,9 +527,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04312CD62807AD9B009B39E8 /* Model.swift in Sources */,
+				04312CD62807AD9B009B39E8 /* NetworkCall.swift in Sources */,
+				04EF464C2807C17C0045CF9B /* ViewModel.swift in Sources */,
 				04312CC92805E095009B39E8 /* ViewController.swift in Sources */,
 				04312CC22805DFBC009B39E8 /* OnboardingViewController + Extention.swift in Sources */,
+				04EF465228081B5D0045CF9B /* AccountCreation+ Extention.swift in Sources */,
+				04EF46492807BBA00045CF9B /* ProfileModal.swift in Sources */,
 				04EC1DE028038A1C00F56B12 /* OnboardingScreenViewController.swift in Sources */,
 				04EC1DBC280186A100F56B12 /* CarbonAppTests.swift in Sources */,
 				04EC1DDD2803331400F56B12 /* SignInPageViewController + Extension.swift in Sources */,

@@ -71,7 +71,7 @@ extension OnboardingScreenViewController {
             let title = UILabel()
             title.text = "Go beyond banking"
             title.numberOfLines = 0
-            title.font = .systemFont(ofSize: 25, weight: .bold)
+            title.font = .systemFont(ofSize: 22, weight: .bold)
             title.textAlignment = .center
             title.translatesAutoresizingMaskIntoConstraints = false
             return title
@@ -174,7 +174,7 @@ extension OnboardingScreenViewController {
                 welcomeDescriptions.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 45),
                 
                 // welcome Title Label
-                welcomeTitle.bottomAnchor.constraint(equalTo: welcomeDescriptions.topAnchor, constant: -25),
+                welcomeTitle.bottomAnchor.constraint(equalTo: welcomeDescriptions.topAnchor, constant: -20),
                 welcomeTitle.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -45),
                 welcomeTitle.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 45),
                 
@@ -248,7 +248,7 @@ extension OnboardingScreenViewController {
             let title = UILabel()
             title.text = "Stay on top of your finances. Anytime. Anywhere"
             title.numberOfLines = 0
-            title.font = .systemFont(ofSize: 25, weight: .bold)
+            title.font = .systemFont(ofSize: 22, weight: .bold)
             title.textAlignment = .center
             title.translatesAutoresizingMaskIntoConstraints = false
             return title
@@ -349,7 +349,7 @@ extension OnboardingScreenViewController {
                 welcomeDescriptions.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 45),
                 
                 // welcome Title Label
-                welcomeTitle.bottomAnchor.constraint(equalTo: welcomeDescriptions.topAnchor, constant: -25),
+                welcomeTitle.bottomAnchor.constraint(equalTo: welcomeDescriptions.topAnchor, constant: -20),
                 welcomeTitle.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -45),
                 welcomeTitle.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 45),
                 
@@ -422,7 +422,7 @@ extension OnboardingScreenViewController {
             let title = UILabel()
             title.text = "Trusted by millions"
             title.numberOfLines = 0
-            title.font = .systemFont(ofSize: 25, weight: .bold)
+            title.font = .systemFont(ofSize: 22, weight: .bold)
             title.textAlignment = .center
             title.translatesAutoresizingMaskIntoConstraints = false
             return title
@@ -489,7 +489,7 @@ extension OnboardingScreenViewController {
             view.addSubview(welcomeDescriptions)
             view.addSubview(signUpButton)
             view.addSubview(animationView)
-            
+          
             
             NSLayoutConstraint.activate([
                 //Upper Bar Button
@@ -524,7 +524,7 @@ extension OnboardingScreenViewController {
                 welcomeDescriptions.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 45),
                 
                 // welcome Title Label
-                welcomeTitle.bottomAnchor.constraint(equalTo: welcomeDescriptions.topAnchor, constant: -25),
+                welcomeTitle.bottomAnchor.constraint(equalTo: welcomeDescriptions.topAnchor, constant: -20),
                 welcomeTitle.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -45),
                 welcomeTitle.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 45),
                 
