@@ -300,8 +300,12 @@ class AccountCreationPageViewController: UIViewController {
         }
     
     @objc func handleSignUp() {
+            
            validateForm()
-       }
+        let profileScreen = ProfilePageViewController()
+        profileScreen.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(profileScreen, animated: true)
+    }
        
        func validateForm() {
            guard let emailText = emailTextField.text, !emailText.isEmpty else { return }
@@ -317,9 +321,7 @@ class AccountCreationPageViewController: UIViewController {
            startSigningUp(email: emailText, password: passwordText, gender: genderText, firstName: phoneNumberText, lastName: lastNameText, middleName: middleNameText, phoneNumber: firstNameText)
        }
        
-    func startSigningUp(email: String, password: String, gender: String, firstName: String, lastName: String, middleName: String, phoneNumber: String) {
-           print("Please call any Sign up api for registration: ", email, password, gender)
-       }
+   
     
     @objc func handleTextChange() {
             
@@ -340,6 +342,58 @@ class AccountCreationPageViewController: UIViewController {
                 createAccountButton.backgroundColor = UIColor.lightGray
                 createAccountButton.isEnabled = false
             }
-            
         }
+    
+    
+    func startSigningUp(email: String, password: String, gender: String, firstName: String, lastName: String, middleName: String, phoneNumber: String) {
+//           print("Please call any Sign up api for registration: ", email, password, gender)
+        
+        var request = URLRequest(url: URL(string: "https://6120b93b24d11c001762ed5f.mockapi.io/api/v1/signup")!)
+                request.httpMethod = "POST"
+                print("its working")
+        let postString = "firstName=\(String(describing: firstNameTextField.text))";
+        "lastName=\(String(describing: lastNameTextField.text))";
+        "email=\(String(describing: emailTextField.text))";
+        "password=\(String(describing: passwordTextField.text))";
+        "gender=\(String(describing: genderTextField.text))";
+        "middleName=\(String(describing: middleNameTextField.text))";
+        "phoneNumber=\(String(describing: phoneNumberTextField.text))";
+//        "id=\(String(describing: id.text))"
+        
+                request.httpBody = postString.data(using: .utf8)
+                let task = URLSession.shared.dataTask(with: request) { data, response, error in
+                    guard let data = data, error == nil else {                                                 // check for fundamental networking error
+                        print("error=\(String(describing: error))")
+                        return
+                    }
+
+                    if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
+                        print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                        print("response = \(String(describing: response))")
+                    }
+
+
+
+                    var responseString = String(data: data, encoding: .utf8)
+                    print("responseString = \(String(describing: responseString))")
+
+                    if(responseString?.contains("true"))!{
+
+                  print("status = true")
+
+                    }
+                    else{
+//                                        DispatchQueue.main.async
+//                                            {
+//
+//                                                self.showToast(message: "Already exists !! ")
+//                                            }
+                        print("Status = false")
+
+                    }
+                }
+                 task.resume()
+            }
+        
+    
 }

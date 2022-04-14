@@ -180,6 +180,7 @@ class SignInPageViewController: UIViewController {
         navigationController?.pushViewController(registerScreen, animated: true)
     }
    
+
     @objc func handleTextChange() {
                let emailText = emailTextField.text!
                 let passwordText = passwordTextField.text!
@@ -194,7 +195,11 @@ class SignInPageViewController: UIViewController {
            }
     
     @objc func handleSignIn() {
-           validateLogIn()
+        validateLogIn()
+        let profilePage = ProfilePageViewController()
+        profilePage.modalPresentationStyle = .fullScreen
+        present(profilePage, animated: true)
+          
        }
        func validateLogIn() {
            guard let emailText = emailTextField.text, !emailText.isEmpty else { return }
